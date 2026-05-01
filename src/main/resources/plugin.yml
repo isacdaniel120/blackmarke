@@ -1,0 +1,27 @@
+name: BlackMarket
+version: '${project.version}'
+main: dev.gugli.blackmarket.BlackMarket
+api-version: '1.21'
+authors: [ gugli ]
+description: A premium underground black market that appears randomly on your server.
+softdepend: [ Vault ]
+
+commands:
+  blackmarket:
+    description: Black Market main command
+    aliases: [ bm ]
+    usage: /bm
+  bmadmin:
+    description: Black Market admin panel
+    usage: /bmadmin
+
+permissions:
+  blackmarket.use:
+    description: Allows using the black market
+    default: true
+  blackmarket.admin:
+    description: Allows access to admin panel
+    default: op
+  blackmarket.bypass:
+    description: Bypass cooldowns and restrictions
+    default: op
